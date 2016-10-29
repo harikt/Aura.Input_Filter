@@ -1,0 +1,29 @@
+{
+    "name": "aura/input-filter",
+    "type": "library",
+    "homepage": "http://auraphp.com/",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/harikt/Aura.Filter_Interface"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "aura/filter-interface":"3.*@dev",
+        "aura/filter":"~2.0",
+        "aura/input":"3.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aura\\Input_Filter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aura\\Input_Filter\\": "tests/",
+            "Aura\\Input\\": "vendor/aura/input/tests/"
+        }
+    }
+}
