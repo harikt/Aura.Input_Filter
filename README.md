@@ -22,7 +22,7 @@ without compromising flexibility. For specifics, please examine the package
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/auraphp/Aura.Input_Filter/badges/quality-score.png?b=3.x)](https://scrutinizer-ci.com/g/auraphp/Aura.Input_Filter/)
 [![Code Coverage](https://scrutinizer-ci.com/g/auraphp/Aura.Input_Filter/badges/coverage.png?b=3.x)](https://scrutinizer-ci.com/g/auraphp/Aura.Input_Filter/)
-[![Build Status](https://travis-ci.org/auraphp/Aura.Input_Filter.png?branch=3.x)](https://travis-ci.org/auraphp/Aura.Input_Filter)
+[![Build Status](https://travis-ci.org/harikt/Aura.Input_Filter.png?branch=3.x)](https://travis-ci.org/harikt/Aura.Input_Filter)
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
