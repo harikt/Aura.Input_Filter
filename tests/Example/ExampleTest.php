@@ -64,7 +64,7 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
             ],
         ]);
 
-        $this->assertTrue($this->form->filter());        
+        $this->assertTrue($this->form->filter());
         $this->assertTrue($this->form->getFailures()->isEmpty());
     }
 
@@ -102,5 +102,15 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($this->form->filter());
         $failures = $this->form->getFailures();
         $this->assertSame(4, count($failures->getMessagesForField('first_name')));
+        $expect = [
+            [],
+            [],
+            [
+                'number' => [
+                    'number should have validated as regex(/^[0-9-]+$/)'
+                ]
+            ]
+        ];
+        $this->assertEquals($expect, $failures->getMessagesForField('phone_numbers'));
     }
 }
